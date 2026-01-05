@@ -1,0 +1,37 @@
+.trust {
+  @apply border-y border-ink/10 bg-white py-16;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-10 text-center text-2xl font-semibold text-ink;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply flex items-center justify-center rounded-2xl border border-ink/10 bg-white px-4 py-6;
+}
+
+.logo {
+  @apply h-7 object-contain;
+}

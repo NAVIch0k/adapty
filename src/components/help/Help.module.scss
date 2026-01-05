@@ -1,0 +1,55 @@
+.help {
+  @apply py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-12 text-3xl font-semibold;
+}
+
+.break {
+  @apply hidden sm:block;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply flex h-full flex-col overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-soft transition hover:-translate-y-1;
+}
+
+.image {
+  @apply h-44 w-full object-cover;
+}
+
+.cardBody {
+  @apply flex flex-1 flex-col gap-4 p-6;
+}
+
+.cardHead {
+  @apply flex items-center justify-between;
+}
+
+.cardTitle {
+  @apply text-sm font-semibold uppercase tracking-[0.2em] text-ink/60;
+}
+
+.cardArrow {
+  @apply text-violet-500;
+}
+
+.cardList {
+  @apply space-y-2 text-sm text-ink/70;
+}

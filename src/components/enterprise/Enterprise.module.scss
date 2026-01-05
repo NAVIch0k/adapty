@@ -1,0 +1,39 @@
+.enterprise {
+  @apply py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-10 text-3xl font-semibold;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply rounded-3xl border border-ink/10 bg-white p-6;
+}
+
+.cardTitle {
+  @apply text-xl font-semibold;
+}
+
+.list {
+  @apply mt-4 space-y-3 text-sm text-ink/70;
+}
+
+.listItem {
+  @apply border-b border-ink/10 pb-2;
+}

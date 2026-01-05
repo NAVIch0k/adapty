@@ -1,0 +1,38 @@
+.sdk {
+  @apply bg-ink py-16 text-white;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-10 text-3xl font-semibold;
+}
+
+.grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: 180px 180px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.item {
+  @apply flex flex-col items-center justify-center gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold;
+}
+
+.icon {
+  @apply h-16 w-16;
+}

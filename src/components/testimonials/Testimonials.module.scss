@@ -1,0 +1,71 @@
+.testimonials {
+  @apply bg-ink py-20 text-white;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply text-3xl font-semibold;
+}
+
+.divider {
+  @apply mt-6 h-px w-full bg-white/10;
+}
+
+.slider {
+  @apply relative mt-10;
+}
+
+.slide {
+  @apply flex flex-col items-start gap-8 lg:flex-row lg:items-center;
+}
+
+.quote {
+  @apply text-base leading-relaxed text-white/90 lg:text-lg;
+}
+
+.name {
+  @apply mt-6 text-lg font-semibold;
+}
+
+.role {
+  @apply mt-1 text-sm text-white/60;
+}
+
+.logo {
+  @apply mt-6 h-7;
+}
+
+.photoWrap {
+  @apply w-full max-w-sm overflow-hidden rounded-3xl bg-white/5;
+}
+
+.photo {
+  @apply h-[360px] w-full object-cover;
+}
+
+.content {
+  @apply max-w-2xl;
+}
+
+.arrowLeft {
+  @apply absolute -left-4 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-4xl text-white/80 transition hover:border-white/60 hover:text-white lg:flex;
+}
+
+.arrowRight {
+  @apply absolute -right-4 top-1/2 hidden h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 text-4xl text-white/80 transition hover:border-white/60 hover:text-white lg:flex;
+}
+
+.dots {
+  @apply mt-8 flex items-center justify-center gap-4;
+}
+
+.dot {
+  @apply h-2.5 w-2.5 rounded-full bg-white/30 transition;
+}
+
+.dotActive {
+  @apply h-3 w-3 rounded-full bg-white;
+}

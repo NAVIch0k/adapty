@@ -1,0 +1,99 @@
+.section {
+  @apply bg-ink py-20 text-white;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.heading {
+  @apply mb-8 text-center text-3xl font-semibold;
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.content {
+  @apply space-y-6;
+}
+
+.description {
+  @apply text-white/70;
+}
+
+.cta {
+  @apply inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold;
+}
+
+.quote {
+  @apply rounded-3xl bg-white/5 p-6;
+}
+
+.quoteLabel {
+  @apply text-sm uppercase tracking-[0.2em] text-white/50;
+}
+
+.quoteText {
+  @apply mt-4 text-lg;
+}
+
+.quoteAuthor {
+  @apply mt-6 flex items-center gap-4;
+}
+
+.quoteAvatar {
+  @apply h-14 w-14 rounded-full object-cover;
+}
+
+.quoteName {
+  @apply font-semibold;
+}
+
+.quoteRole {
+  @apply text-sm text-white/60;
+}
+
+.panel {
+  @apply rounded-3xl border border-white/10 bg-white/5 p-6;
+}
+
+.tabs {
+  @apply flex flex-wrap gap-2;
+}
+
+.tabActive {
+  @apply rounded-full bg-white px-3 py-1 text-xs font-semibold text-ink;
+}
+
+.tabInactive {
+  @apply rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white;
+}
+
+.code {
+  @apply mt-6 max-h-[360px] overflow-auto rounded-2xl bg-[#1c1c1c] p-5 text-xs leading-relaxed text-white;
+}
+
+.footer {
+  @apply mt-4 flex items-center justify-between text-xs text-white/60;
+}
+
+.footerLeft {
+  @apply flex items-center gap-2;
+}
+
+.github {
+  @apply h-5;
+}
+
+.footerLink {
+  @apply rounded-full border border-white/20 px-3 py-1 text-xs;
+}

@@ -1,0 +1,65 @@
+.cases {
+  @apply py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-10 text-3xl font-semibold;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply flex flex-col gap-4 rounded-3xl border border-ink/10 bg-white p-6 shadow-soft transition hover:-translate-y-1;
+}
+
+.cardHead {
+  @apply flex items-center gap-4;
+}
+
+.icon {
+  @apply h-12 w-12;
+}
+
+.cardTitle {
+  @apply text-sm font-semibold;
+}
+
+.cardCategory {
+  @apply text-xs text-ink/60;
+}
+
+.metric {
+  @apply text-lg font-semibold text-ink/80;
+}
+
+.desc {
+  @apply text-sm text-ink/60;
+}
+
+.more {
+  @apply mt-auto inline-flex items-center gap-2 text-sm font-semibold;
+}
+
+.all {
+  @apply mt-10 inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-2 text-sm font-semibold;
+}

@@ -1,0 +1,41 @@
+.sla {
+  @apply bg-paper py-20;
+}
+
+.container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.title {
+  @apply mb-10 text-3xl font-semibold;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply rounded-2xl border border-ink/10 bg-white p-6;
+}
+
+.value {
+  @apply text-2xl font-semibold text-ink;
+}
+
+.label {
+  @apply mt-2 text-sm text-ink/60;
+}

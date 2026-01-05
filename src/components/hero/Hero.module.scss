@@ -1,0 +1,59 @@
+.hero {
+  @apply relative overflow-hidden bg-hero-glow pb-20 pt-16;
+}
+
+.container {
+  @apply mx-auto flex w-full max-w-6xl flex-col gap-4 px-6 lg:flex-row lg:items-center;
+}
+
+.content {
+  @apply flex-1 space-y-6;
+}
+
+.title {
+  @apply text-balance text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl;
+}
+
+.gradient {
+  @apply text-gradient;
+}
+
+.subtitle {
+  @apply max-w-xl text-lg text-ink/70;
+}
+
+.actions {
+  @apply flex flex-wrap items-center gap-4;
+}
+
+.form {
+  @apply flex w-full max-w-sm flex-col gap-3 rounded-2xl border border-ink/10 bg-white p-3 shadow-soft sm:flex-row sm:items-center;
+}
+
+.input {
+  @apply h-11 flex-1 rounded-xl border border-ink/10 px-4 text-sm outline-none focus:border-ink/50;
+}
+
+.submit {
+  @apply h-11 rounded-xl bg-ink px-5 text-sm font-semibold text-white;
+}
+
+.demo {
+  @apply inline-flex h-11 items-center gap-2 rounded-xl border border-ink/20 px-5 text-sm font-semibold;
+}
+
+.media {
+  @apply relative flex-1;
+}
+
+.mediaWrap {
+  @apply relative mx-auto flex max-w-md items-center;
+}
+
+.paywall {
+  @apply relative z-10 w-[220px] rounded-3xl sm:w-[200px];
+}
+
+.overview {
+  @apply max-w-max absolute right-[-74%] w-[360px] rounded-3xl shadow-xl sm:w-[620px];
+}
